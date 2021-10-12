@@ -1,0 +1,187 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link {
+	position: relative;
+
+	a {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: $dark;
+		margin-left: -3rem;
+	}
+
+	&:hover {
+		color: $theme-color;
+
+		.link-icon {
+			transform: translateX(1rem);
+		}
+	}
+}
+
+marquee {
+	background-color: #3f4041;
+	font-weight: 600;
+	color: $white;
+}
+
+.link-icon {
+	position: relative;
+	background-image: url(../images/icons/link-icon.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 11.5rem;
+    height: 6.75rem;
+
+	@include transition(all 0.3s ease-in-out);
+}
+
+#about, #contact {
+	padding: 7rem 0;
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem 0;
+	}
+}
+
+.about-more {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+	.attend-image {
+		position: absolute;
+		top: 7rem;
+		left: -12rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+		top: 0;
+		left: 0;
+
+		.attend-image {
+			position: relative;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+	}
+}
+
+.brand {
+	position: relative;
+
+	.brand-img {
+		position: absolute;
+		top: 10rem;
+		right: -8rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		img {
+			height: auto;
+		}
+		.brand-img {
+			position: relative;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+
+.adventage {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+	.attend-image {
+		position: absolute;
+		top: 23vh;
+		left: 11rem;
+		right: -14rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+		top: 0;
+		left: 0;
+
+		.attend-image {
+			position: relative;
+			top: 0;
+			left: 0;
+			right: 0;
+			display: none;
+		}
+	}
+}
+
+.portfolios {
+	a {
+		padding: 0.75rem;
+	}
+}
+
+// slider items//
+.slick-slide {
+	height: auto;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+
+	&:before {
+		display: none;
+	}
+
+	&.best-control {
+		top: 35%;
+	}
+}
+
+.slick-prev {
+	left: -6rem;
+
+	&.best-control {
+		left: -38rem;
+	}
+
+	@media screen and (max-width : 1600px) {
+		left: -3rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+.slick-next {
+	right: -3rem;
+
+	&.best-control {
+		right: 4rem;
+	}
+
+	@media screen and (max-width : 1600px) {
+		right: 0rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}

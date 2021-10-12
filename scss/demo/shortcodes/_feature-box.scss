@@ -1,0 +1,36 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: feature-box.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Featured Boxes
+-----------------------------------------------------------------*/
+
+.fbox {	
+	position: relative;
+	margin-bottom: 1.875rem;
+
+	.fbox-icon {
+		font-family: $heading-font;
+		font-size: 4.5rem;
+		letter-spacing: 0.5rem;
+		display: flex;
+		z-index: 1;
+
+		&:before {
+			position: relative;
+			display: inline-block;
+			right: -1.875rem;
+			margin-left: -1.875rem;
+			content: "";
+			width: 3rem;
+			height: 3rem;
+			border: 1px solid #989390;
+			border-radius: 50%;
+			z-index: -1;
+		}
+	}
+}

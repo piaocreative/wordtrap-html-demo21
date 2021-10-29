@@ -52,30 +52,21 @@
 }
 
 .testimonal-image {
-    position: absolute;
-    right: 0;
-    top: 17vh;
-    width: 100%;
-
     img {
         width: 100%;
         height: auto;
     }
 
-    .attach-image {
+    @include media-breakpoint-up(lg) {
         position: absolute;
-        left: -5rem;
-        bottom: -5rem;
-    }
-
-    @include media-breakpoint-down(lg) {
-        position: relative;
-        top: 0;
+        right: 0;
+        top: 17vh;
+        width: 100%;
 
         .attach-image {
-            position: relative;
-            left: 0;
-            bottom: -1rem;
+            position: absolute;
+            left: -5rem;
+            bottom: -5rem;
         }
     }
 }
